@@ -191,6 +191,52 @@ ul {
   }
 }
 
+.formContainer{
+  margin-left: 3.5rem;
+
+}
+
+.flexForm{
+  display: flex;
+}
+
+.flexForm2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#name {
+  width: 9rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+#number {
+  width: 9rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+#email{
+  width: 20.5rem;
+  height: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+#message{
+  width: 20.5rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.submitButton{
+  padding: 1rem 2rem;
+}
+
 .footerContainer {
   margin-top: 100%;
   padding: 1.5rem 2rem;
