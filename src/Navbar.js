@@ -18,7 +18,7 @@ const Navbar = () => {
 					</div>
 					<div className="nav">
 						<button className="burger" onClick={handleClick}>
-							<i class="fa-solid fa-bars"></i>
+							<i className="fa-solid fa-bars"></i>
 						</button>
 						<ul className="navbar-nav">
 							<li className="nav-item">
@@ -31,7 +31,7 @@ const Navbar = () => {
 									About
 								</a>
 							</li>
-							<li className="dropdown nav-item">
+							<ul className="dropdown nav-item">
 								<li className="nav-item">Fragrances</li>
 								<div className="dropdown-content">
 									<a className="nav-link" href="#femalefragrances">
@@ -44,7 +44,7 @@ const Navbar = () => {
 										Oud Fragrances
 									</a>
 								</div>
-							</li>
+							</ul>
 							<li className="nav-item">
 								<a className="nav-link" href="#contact">
 									Contact Us
