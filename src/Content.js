@@ -1,22 +1,169 @@
 const Content = () => {
-    return ( 
-        <div>
-            <section>
-                <div class="text-center tm-hero-text-container">
-                    <div class="tm-hero-text-container-inner">
-                        <h2 class="tm-hero-title">Welcome to Inspiring Scents</h2>
-                    </div>
+	const female = [
+		"armani si",
+		"aqua di gio",
+		"beyonce heat",
+		"britney spears fantasy",
+		"britney spears curious",
+		"burberry her",
+		"bulgari amethyste",
+		"chanel chance",
+		"chanel no. 5",
+		"ch the good girl",
+		"clinique happy",
+		"coco mademoiselle",
+		"cool water",
+		"coppelia",
+		"d&g light blue",
+		"d&g the one",
+		"diesel loverdose tatoo",
+		"dkny green",
+		"dkny pure",
+		"dkny fresh blossom",
+		"dunhill desire",
+		"elizabeth arden untold",
+		"elie saab",
+		"elie saab girl of now",
+		"gucci bloom",
+		"gucci guilty",
+		"gucci rush",
+		"guess woman",
+		"hypnotic poison",
+		"j.lo live",
+		"jimmy choo",
+		"katy perry killer queen",
+		"kim kardashian",
+		"lacoste touch of pink",
+		"la vie est belle",
+		"little black dress",
+		"marc jacobs daisy",
+		"michael kors rose gold",
+		"miss dior cherie",
+		"miss dior rose'n roses",
+		"opium black",
+		"paco lady million",
+		"panache",
+		"paris hilton heiress",
+		"pink friday",
+		"provocative",
+		"red door",
+		"stella mccartney",
+		"sunflower",
+		"taylor swift for her",
+		"tommy girl",
+		"versace bright crystal",
+		"victoria secret bombshell",
+		"wanted azzaro",
+		"white diamonds",
+		"ysl libre intense ",
+	];
+
+	const male = [
+		"212 vip",
+		"aqua di gio",
+		"azzaro legend",
+		"boss orange",
+		"bulgari man in black",
+		"ck-one",
+		"clinique happy",
+		"cool water",
+		"d&g light blue",
+		"david beckham",
+		"dior sauvage",
+		"dunhill blue",
+		"dunhill desire",
+		"fahrenheit",
+		"ferrari black",
+		"gucci guilty",
+		"gucci rush",
+		"hugo boss",
+		"issey miyake",
+		"jean paul gaultier",
+		"jimmy choo",
+		"lacoste blue",
+		"lacoste white",
+		"mr burberry",
+		"old spice",
+		"paco one million",
+		"paco invictus",
+		"polo",
+		"tom ford noir",
+		"versace pour homme",
+		"wanted azzaro",
+	];
+
+	const oud = [
+		"black safran",
+		"gucci oud",
+		"mkh emarat",
+		"musk al whazir",
+		"oud blond",
+		"oud de milan",
+		"oud malaki",
+		"sadaf",
+		"shaik",                    
+		"sultan",
+		"suzerain",
+		"white musk",
+		"white oud",
+	];
+	return (
+		<div>
+			<section id="landing" className="landing">
+				<h2 className="landing-title">Welcome to Inspiring Scents</h2>
+
+				<a href="#aboutus" className="landing-text">
+					<i className="fas fa-2x fa-arrow-down tm-down-arrow"> Get Started</i>
+				</a>
+			</section>
+
+			<section id="about" className="about">
+				<h1>About Us</h1>
+				<p>We create oil-based perfumes based on widely known and popular brands.</p>
+			</section>
+
+			<section id="fragrances" className="fragrances">
+                <div className="female fragLists">
+					<h1>Female fragrances</h1>
+                    <ul className="fragList">
+						{female.map((item, index) => {
+							return (
+								<li key={index}>
+									<p><span>like </span>{ item }</p>
+								</li>
+							);
+						})}
+					</ul>
                 </div>
 
-                <div class="tm-next tm-intro-next">
-                    <a href="#aboutus" class="text-center tm-down-arrow-link">
-                        <i class="fas fa-2x fa-arrow-down tm-down-arrow"> Get Started</i>
-                    </a>
+				<div className="male fragLists">
+					<h1>Male fragrances</h1>
+                    <ul className="fragList">
+						{male.map((item, index) => {
+							return (
+								<li key={index}>
+									<p><span>like </span>{ item }</p>
+								</li>
+							);
+						})}
+					</ul>
                 </div>
-            </section>
-            
-        </div>
-     );
-}
- 
+
+				<div className="oud fragLists">
+					<h1>Oud fragrances</h1>
+                    <ul className="fragList">
+						{oud.map((item, index) => {
+							return (
+								<li key={index}>
+									<p><span>like </span>{ item }</p>
+								</li>
+							);
+						})}
+					</ul>
+                </div>
+			</section>
+		</div>
+	);
+};
+
 export default Content;

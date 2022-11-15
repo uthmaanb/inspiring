@@ -8,7 +8,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div>
+		<div className="NavContainer">
 			<nav className="navbar" id="tmNav">
 				<div className="containerHeader">
 					<div className="tm-next">
@@ -22,19 +22,21 @@ const Navbar = () => {
 						</button>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<a className="nav-link" href="#home">
+								<a className="nav-link" href="#landing">
 									Home
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#aboutus">
+								<a className="nav-link" href="#about">
 									About
 								</a>
 							</li>
 							<ul className="dropdown nav-item">
-								<li className="nav-item">Fragrances</li>
+								<li className="nav-item"><a className="nav-link" href="#fragrances">
+										Fragrances
+									</a></li>
 								<div className="dropdown-content">
-									<a className="nav-link" href="#femalefragrances">
+									<a className="nav-link" href="#fragrances">
 										Female Fragrances
 									</a>
 									<a className="nav-link" href="#malefragrances">
