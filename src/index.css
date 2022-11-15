@@ -149,6 +149,10 @@ ul {
     padding: 1rem;
   }
 
+  .navbar-brand{
+    margin-left: 2rem;
+  }
+
   .navbar-nav {
     display: none;
   }
@@ -167,6 +171,16 @@ ul {
     font-weight: 600;
 }
 
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerItem{
+  padding: 0.5rem;
+}
   
 }
 
@@ -177,7 +191,9 @@ ul {
   }
 }
 
-footer {
+.footerContainer {
   margin-top: 100%;
   padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
 }
