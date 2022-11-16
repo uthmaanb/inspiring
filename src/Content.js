@@ -101,7 +101,7 @@ const Content = () => {
 		"oud de milan",
 		"oud malaki",
 		"sadaf",
-		"shaik",                    
+		"shaik",
 		"sultan",
 		"suzerain",
 		"white musk",
@@ -119,48 +119,59 @@ const Content = () => {
 
 			<section id="about" className="about">
 				<h1>About Us</h1>
-				<p>We create oil-based perfumes based on widely known and popular brands.</p>
+				<p>
+					We create oil-based perfumes based on widely known and popular brands.
+				</p>
 			</section>
 
 			<section id="fragrances" className="fragrances">
-                <div className="female fragLists">
+				<div className="female fragLists">
 					<h1>Female fragrances</h1>
-                    <ul className="fragList">
+					<ul className="fragList">
 						{female.map((item, index) => {
 							return (
 								<li key={index}>
-									<p><span>like </span>{ item }</p>
+									<p>
+										<span>like </span>
+										{item}
+									</p>
 								</li>
 							);
 						})}
 					</ul>
-                </div>
+				</div>
 
 				<div className="male fragLists">
 					<h1>Male fragrances</h1>
-                    <ul className="fragList">
+					<ul className="fragList">
 						{male.map((item, index) => {
 							return (
 								<li key={index}>
-									<p><span>like </span>{ item }</p>
+									<p>
+										<span>like </span>
+										{item}
+									</p>
 								</li>
 							);
 						})}
 					</ul>
-                </div>
+				</div>
 
 				<div className="oud fragLists">
 					<h1>Oud fragrances</h1>
-                    <ul className="fragList">
+					<ul className="fragList">
 						{oud.map((item, index) => {
 							return (
 								<li key={index}>
-									<p><span>like </span>{ item }</p>
+									<p>
+										<span>like </span>
+										{item}
+									</p>
 								</li>
 							);
 						})}
 					</ul>
-                </div>
+				</div>
 			</section>
 		</div>
 	);
