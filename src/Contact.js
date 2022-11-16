@@ -1,5 +1,6 @@
 const Contact = () => {
   return (
+    
     <div className="formContainer">
       <form action="https://formspree.io/f/mgedjrpd" method="POST">
         <div className="flexForm">
@@ -43,6 +44,7 @@ const Contact = () => {
         </button>
       </form>
 
+    <div className="contactMethods">
       <div className="contact-item">
         <a
           rel="nofollow"
@@ -62,9 +64,10 @@ const Contact = () => {
         >
           <i className="far fa-2x fa-envelope mr-4"></i>
           <span className="mb-0">inspiringscentssouthafrica@gmail.com</span>
-        </a>
+        </a>{" "}
+        </div>
+        </div>
       </div>
-    </div>
   );
 };
 

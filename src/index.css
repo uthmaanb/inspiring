@@ -183,7 +183,9 @@ ul {
 /* Form Styles */
 .formContainer {
 	margin-left: 3.5rem;
-}
+	margin-top: 7rem;
+	display: flex;
+  }
 
 .flexForm {
 	display: flex;
@@ -195,6 +197,18 @@ ul {
 	align-items: flex-start;
 }
 
+.contactMethods{
+	margin-left: 2rem;
+}
+
+.contact-item{
+	margin-bottom: 2rem;
+}
+
+.mb-0{
+	margin-left: 1rem;
+}
+
 #name {
 	width: 9rem;
 	height: 3rem;
@@ -203,7 +217,7 @@ ul {
 }
 
 #number {
-	width: 9rem;
+	width: 9.5rem;
 	height: 3rem;
 	margin-right: 2rem;
 	margin-bottom: 1rem;
