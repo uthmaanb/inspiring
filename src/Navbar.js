@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [isActive, setIsActive] = useState(false);
@@ -22,19 +23,21 @@ const Navbar = () => {
 						</button>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<a className="nav-link" href="#landing">
+								<Link className="nav-link" to="/">
 									Home
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#about">
+								<Link className="nav-link" to="/#about">
 									About
-								</a>
+								</Link>
 							</li>
 							<ul className="dropdown nav-item">
-								<li className="nav-item"><a className="nav-link" href="#fragrances">
+								<li className="nav-item">
+									<Link className="nav-link" to="/#fragrances">
 										Fragrances
-									</a></li>
+									</Link>
+								</li>
 								<div className="dropdown-content">
 									<a className="nav-link" href="#fragrances">
 										Female Fragrances
@@ -48,9 +51,9 @@ const Navbar = () => {
 								</div>
 							</ul>
 							<li className="nav-item">
-								<a className="nav-link" href="#contact">
+								<Link className="nav-link" to="/contact">
 									Contact Us
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>

@@ -1,295 +1,294 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
 }
 
 /* styles we made */
-.containerHeader{
-  display: flex;
-  height: 4rem;
-  padding: 1rem 2rem;
-  width: 100%;
-  z-index: 20;
-  top: 0;
-  position: fixed;
-  background: white;
+.containerHeader {
+	display: flex;
+	height: 4rem;
+	padding: 1rem 2rem;
+	width: 100%;
+	z-index: 20;
+	top: 0;
+	position: fixed;
+	background: white;
 }
 
-.tm-next{
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.tm-next {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.navbar-nav{
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  text-decoration: none;
-  width: 60%;
+.navbar-nav {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+	width: 60%;
 }
 
-.navbar-brand{
-  font-size:2rem;
-  font-weight: 750;
-  color: #33215e;
+.navbar-brand {
+	font-size: 2rem;
+	font-weight: 750;
+	color: #33215e;
 }
 
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-.nav-link{
-  color: black;
+.nav-link {
+	color: black;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  text-decoration: none;
-  min-width: 80%;
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	text-decoration: none;
+	min-width: 80%;
 }
 
-.nav-item{
-  display: flex;
-  align-items: center;
+.nav-item {
+	display: flex;
+	align-items: center;
 }
 
 .burger {
-  display: none;
+	display: none;
 }
 
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+	background-color: #04aa6d;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
 }
 
 .hide {
-  display: none;
+	display: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  /* display: inline-block; */
+	position: relative;
+	/* display: inline-block; */
 }
 .dropdown:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 50px;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	top: 50px;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
 
-
-
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
 
 ul {
-  padding-inline-start: unset;
+	padding-inline-start: unset;
 }
 
 /* Landing Page Styles */
 .landing {
-  background: url(../public/perfumeproducts2\ copy.jpeg) no-repeat left center;;
-  background-size: cover;
+	background: url(../public/perfumeproducts2\ copy.jpeg) no-repeat left center;
+	background-size: cover;
 	position: relative;
-  height: 100vh;
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	height: 100vh;
+	padding-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .landing-text {
-  padding-top: 2rem;
+	padding-top: 2rem;
 }
 
 /* Fragrance lists */
 #fragrances {
-  padding-top: 4rem;
+	padding-top: 4rem;
 }
 
 .fragLists {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .fragList {
-  /* list-style-type: none; */
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-  width: 80%;
+	/* list-style-type: none; */
+	columns: 3;
+	-webkit-columns: 3;
+	-moz-columns: 3;
+	width: 80%;
 }
 
 /* About section */
 .about {
-  height: 30vh;
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	height: 30vh;
+	padding-top: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-@media screen and (max-width: 740px) {
-  .burger {
-    display: block;
-    padding: 1rem;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 6px;
-    border-color: darkgray;
-  
-  }
-  .burger:hover {
-    
-    background-color: grey;
-    cursor: pointer;
-  
-  }
-
-  .nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-
-  .navbar-brand{
-    margin-left: 2rem;
-  }
-
-  .navbar-nav {
-    display: none;
-  }
-
-  .navbar-nav2{
-    background-color: #e4e3e6;
-    padding: 2rem 0rem;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 3%;
-    height: 45px;
-    font-size: 1.5rem;
-    font-weight: 600;
+/* Form Styles */
+.formContainer {
+	margin-left: 3.5rem;
 }
 
-.footerContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.footerItem{
-  padding: 0.5rem;
-}
-  
-}
-
-@media screen and (min-width: 740px) {
-  .navbar-nav2{
-    display: none;
-    
-  }
-}
-
-.formContainer{
-  margin-left: 3.5rem;
-
-}
-
-.flexForm{
-  display: flex;
+.flexForm {
+	display: flex;
 }
 
 .flexForm2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 #name {
-  width: 9rem;
-  height: 3rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+	width: 9rem;
+	height: 3rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 
 #number {
-  width: 9rem;
-  height: 3rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+	width: 9rem;
+	height: 3rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 
-#email{
-  width: 20.5rem;
-  height: 3rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+#email {
+	width: 20.5rem;
+	height: 3rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 
-#message{
-  width: 20.5rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
+#message {
+	width: 20.5rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 
-.submitButton{
-  padding: 1rem 2rem;
+.submitButton {
+	padding: 1rem 2rem;
 }
 
+/* footer styles */
 .footerContainer {
-  margin-top: 100%;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-around;
+	padding: 1.5rem 2rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 740px) {
+	.burger {
+		display: block;
+		padding: 1rem;
+		font-size: 20px;
+		background-color: white;
+		border-radius: 6px;
+		border-color: darkgray;
+	}
+	.burger:hover {
+		background-color: grey;
+		cursor: pointer;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: flex-end;
+		padding: 1rem;
+	}
+
+	.navbar-brand {
+		margin-left: 2rem;
+	}
+
+	.navbar-nav {
+		display: none;
+	}
+
+	.navbar-nav2 {
+		background-color: #e4e3e6;
+		padding: 2rem 0rem;
+	}
+
+	.nav-item {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 3%;
+		height: 45px;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.footerContainer {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footerItem {
+		padding: 0.5rem;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.navbar-nav2 {
+		display: none;
+	}
 }
