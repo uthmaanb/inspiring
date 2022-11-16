@@ -1,4 +1,7 @@
-const Content = () => {
+import Navbar from "./Navbar";
+
+const Content = ({ homeRef, aboutRef, fragRef }) => {
+	
 	const female = [
 		"armani si",
 		"aqua di gio",
@@ -109,7 +112,9 @@ const Content = () => {
 	];
 	return (
 		<div>
-			<section id="landing" className="landing">
+			<Navbar />
+
+			<section id="landing" className="landing" ref={homeRef}>
 				<h2 className="landing-title">Welcome to Inspiring Scents</h2>
 
 				<a href="#aboutus" className="landing-text">
@@ -117,14 +122,14 @@ const Content = () => {
 				</a>
 			</section>
 
-			<section id="about" className="about">
+			<section id="about" className="about" ref={aboutRef}>
 				<h1>About Us</h1>
 				<p>
 					We create oil-based perfumes based on widely known and popular brands.
 				</p>
 			</section>
 
-			<section id="fragrances" className="fragrances">
+			<section id="fragrances" className="fragrances" ref={fragRef}>
 				<div className="female fragLists">
 					<h1>Female fragrances</h1>
 					<ul className="fragList">
