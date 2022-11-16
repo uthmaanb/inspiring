@@ -1,5 +1,11 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,23 +19,22 @@ code {
 }
 
 /* styles we made */
-
 .containerHeader{
   display: flex;
+  height: 4rem;
   padding: 1rem 2rem;
-
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  position: fixed;
+  background: white;
 }
 
 .tm-next{
   width: 20%;
   display: flex;
   justify-content: center;
-  align-items: center;  
-}
-
-.containerHeader{
-  height: 5.5rem;
-
+  align-items: center;
 }
 
 .navbar-nav{
@@ -124,6 +129,51 @@ a{
 
 ul {
   padding-inline-start: unset;
+}
+
+/* Landing Page Styles */
+.landing {
+  background: url(../public/perfumeproducts2\ copy.jpeg) no-repeat left center;;
+  background-size: cover;
+	position: relative;
+  height: 100vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-text {
+  padding-top: 2rem;
+}
+
+/* Fragrance lists */
+#fragrances {
+  padding-top: 4rem;
+}
+
+.fragLists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fragList {
+  /* list-style-type: none; */
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  width: 80%;
+}
+
+/* About section */
+.about {
+  height: 30vh;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (max-width: 740px) {
