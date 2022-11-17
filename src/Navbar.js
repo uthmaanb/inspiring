@@ -10,9 +10,9 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 
 	const handleScroll = (ref) => {
 		window.scrollTo({
-		  top: ref.offsetTop,
+			top: ref.offsetTop,
 		});
-	  };
+	};
 
 	return (
 		<div className="NavContainer">
@@ -29,18 +29,36 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 						</button>
 						<ul className="navbar-nav">
 							<li className="nav-item">
-								<Link className="nav-link" onClick={() => {handleScroll(homeRef);}} to="/#landing">
+								<Link
+									className="nav-link"
+									onClick={() => {
+										handleScroll(homeRef);
+									}}
+									to="/#landing"
+								>
 									Home
 								</Link>
 							</li>
 							<li className="nav-item">
-								<Link className="nav-link" onClick={() => {handleScroll(aboutRef);}} to="/#about">
+								<Link
+									className="nav-link"
+									onClick={() => {
+										handleScroll(aboutRef);
+									}}
+									to="/#about"
+								>
 									About
 								</Link>
 							</li>
 							<ul className="dropdown nav-item">
 								<li className="nav-item">
-									<Link className="nav-link" onClick={() => {handleScroll(fragRef);}} to="/#fragrances">
+									<Link
+										className="nav-link"
+										onClick={() => {
+											handleScroll(fragRef);
+										}}
+										to="/#fragrances"
+									>
 										Fragrances
 									</Link>
 								</li>
@@ -66,17 +84,29 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 				</div>
 			</nav>
 			<div className={isActive ? "" : "hide"}>
-				<nav>
+				<nav onClick={handleClick}>
 					<ul className="navbar-nav2">
 						<li className="nav-item">
-							<a className="nav-link" href="#home">
+							<Link
+								className="nav-link"
+								onClick={() => {
+									handleScroll(homeRef);
+								}}
+								to="/#landing"
+							>
 								Home
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#aboutus">
+							<Link
+								className="nav-link"
+								onClick={() => {
+									handleScroll(aboutRef);
+								}}
+								to="/#about"
+							>
 								About
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#malefragrances">
@@ -99,9 +129,9 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="contact.html">
+							<Link className="nav-link" to="/contact">
 								Contact Us
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#contact">
