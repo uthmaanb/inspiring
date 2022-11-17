@@ -250,12 +250,17 @@ ul {
 
 @media screen and (max-width: 740px) {
 	.burger {
-		display: block;
-		padding: 1.5rem 1rem;
-		font-size: 20px;
+		display: flex;
+		align-self: center;
+		padding: 0.5rem;
+		font-size: 18px;
 		background-color: white;
 		border-radius: 6px;
 		border-color: darkgray;
+	}
+
+	.fa-bars:before {
+		bottom: 0 !important;
 	}
 
 	.burger:hover {
@@ -287,8 +292,9 @@ ul {
 	}
 
 	.navbar-brand {
-		margin-left: 2rem;
-		margin-top: 3rem;
+		font-size: 1.5rem;
+		/* margin-left: 2rem;
+		margin-top: 3rem; */
 	}
 
 	.navbar-nav {
