@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import { useRef } from "react";
 import Navbar from "./Navbar";
 
 const Content = ({ homeRef, aboutRef, fragRef }) => {
