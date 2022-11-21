@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ homeRef, aboutRef, fragRef }) => {
+const Navbar = ({ homeRef, aboutRef, fragRef  }) => {
 	const [isActive, setIsActive] = useState(false);
 
 	const handleClick = (event) => {
@@ -32,7 +32,7 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 								<Link
 									className="nav-link"
 									onClick={() => {
-										handleScroll(homeRef);
+										handleScroll(homeRef.current);
 									}}
 									to="/#landing"
 								>
@@ -43,7 +43,7 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 								<Link
 									className="nav-link"
 									onClick={() => {
-										handleScroll(aboutRef);
+										handleScroll(aboutRef.current);
 									}}
 									to="/#about"
 								>
@@ -55,7 +55,7 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 									<Link
 										className="nav-link"
 										onClick={() => {
-											handleScroll(fragRef);
+											handleScroll(fragRef.current);
 										}}
 										to="/#fragrances"
 									>
@@ -90,7 +90,7 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 							<Link
 								className="nav-link"
 								onClick={() => {
-									handleScroll(homeRef);
+									handleScroll(homeRef.current);
 								}}
 								to="/#landing"
 							>
@@ -101,7 +101,7 @@ const Navbar = ({ homeRef, aboutRef, fragRef }) => {
 							<Link
 								className="nav-link"
 								onClick={() => {
-									handleScroll(aboutRef);
+									handleScroll(aboutRef.current);
 								}}
 								to="/#about"
 							>
