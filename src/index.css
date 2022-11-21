@@ -312,7 +312,22 @@ span {
 	.landing-title {
 		font-size: 1.5rem;
 		margin-bottom: 1.5rem;
-	  }
+	}
+
+	
+	.fragList {
+		columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
+		width: 80%;
+	}
+
+	.footerContainer {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 @media screen and (max-width: 740px) {
@@ -385,12 +400,7 @@ span {
 		font-weight: 600;
 	}
 
-	.footerContainer {
-		display: flex;
-		justify-content: space-around;
-		flex-direction: column;
-		align-items: flex-start;
-	}
+	
 
 	.footerItem {
 		padding: 0.5rem;
