@@ -1,7 +1,15 @@
+import { Link } from "react-router-dom";
+// import { useRef } from "react";
 import Navbar from "./Navbar";
 
 const Content = ({ homeRef, aboutRef, fragRef }) => {
-	
+
+	const handleScroll = (ref) => {
+		window.scrollTo({
+			top: ref.offsetTop,
+		});
+	};
+
 	const female = [
 		"armani si",
 		"aqua di gio",
@@ -112,14 +120,20 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 	];
 	return (
 		<div>
-			<Navbar />
+			<Navbar homeRef={ homeRef } aboutRef={ aboutRef } fragRef={ fragRef }  />
 
 			<section id="landing" className="landing" ref={homeRef}>
 				<h2 className="landing-title">Welcome to Inspiring Scents</h2>
 
-				<a href="#aboutus" className="landing-text">
+				<Link
+					className="nav-link landing-text"
+					onClick={() => {
+						handleScroll(aboutRef.current);
+					}}
+					to="/#about"
+				>
 					<i className="fas fa-2x fa-arrow-down tm-down-arrow"> Get Started</i>
-				</a>
+				</Link>
 			</section>
 
 			<section id="about" className="about" ref={aboutRef}>
