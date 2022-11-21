@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Content from "./Content";
 import Footer from "./Footer";
 import Contact from "./Contact";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
 	const homeRef = useRef(null);	  
@@ -15,6 +15,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Content homeRef={homeRef} aboutRef={aboutRef} fragRef={fragRef} />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="*" element={ <div><h2>404 Page not found</h2></div> } />
 				</Routes>
 				<Footer />
 			</div>
