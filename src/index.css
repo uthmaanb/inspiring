@@ -301,6 +301,13 @@ span {
 	}
 }
 
+@media screen and (max-width: 525px) {
+	.landing-title {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+	  }
+}
+
 @media screen and (max-width: 740px) {
 	.burger {
 		display: flex;
