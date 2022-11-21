@@ -146,9 +146,29 @@ ul {
 	justify-content: center;
 }
 
-.landing-text {
-	padding-top: 2rem;
+.landing-title {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;	
 }
+
+.landing-text {
+	padding: 1.5rem 1rem;
+	margin-top: 1rem;
+	background-color: #33215e;
+	color: #ddd;
+}
+
+.aboutUs {
+	font-size: 2rem;
+	color: #33215e;
+	text-decoration: underline darkslateblue;
+}
+
+.aboutUs-content {
+	margin-top: 2rem;
+	font-size: 1.5rem;
+}
+
 
 /* Fragrance lists */
 #fragrances {
@@ -172,6 +192,8 @@ ul {
 .fragranceHeading {
 	padding-bottom: 2rem;
 	font-size: 2rem;
+	color: #33215e;
+	text-decoration: underline darkslateblue;
 }
 span {
 	font-weight: lighter;
@@ -261,6 +283,13 @@ span {
 	padding: 1.5rem 2rem;
 	display: flex;
 	justify-content: space-around;
+	background-color: #33215e;
+	color: #ddd;
+}
+
+.footerContact {
+	color: #ddd;
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 750px) {
@@ -288,7 +317,7 @@ span {
 	}
 
 	.burger:hover {
-		background-color: grey;
+		background-color: #ddd;
 		cursor: pointer;
 	}
 
@@ -325,18 +354,18 @@ span {
 	}
 
 	.navbar-nav2 {
-		background-color: #e4e3e6;
+		background-color: white;
 		padding: 2rem 0rem;
 		position: fixed;
-	top: 4rem;
+		top: 4rem;
 		z-index: 20;
-		width: 100%;;
+		width: 100%;
 	}
 
 	.nav-item {
 		display: flex;
 		justify-content: flex-end;
-		padding-right: 3%;
+		padding-right: 7%;
 		height: 45px;
 		font-size: 1.5rem;
 		font-weight: 600;
