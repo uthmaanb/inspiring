@@ -145,12 +145,12 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 
 			<section id="fragrances" className="fragrances" ref={fragRef}>
 				<div className="female fragLists">
-					<h1>Female fragrances</h1>
+					<h1 className="fragranceHeading">Female fragrances</h1>
 					<ul className="fragList">
 						{female.map((item, index) => {
 							return (
 								<li key={index}>
-									<p>
+									<p className="individualFragrance">
 										<span>like </span>
 										{item}
 									</p>
@@ -161,12 +161,12 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 				</div>
 
 				<div className="male fragLists">
-					<h1>Male fragrances</h1>
+					<h1 className="fragranceHeading">Male fragrances</h1>
 					<ul className="fragList">
 						{male.map((item, index) => {
 							return (
 								<li key={index}>
-									<p>
+									<p className="individualFragrance">
 										<span>like </span>
 										{item}
 									</p>
@@ -177,12 +177,12 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 				</div>
 
 				<div className="oud fragLists">
-					<h1>Oud fragrances</h1>
+					<h1 className="fragranceHeading">Oud fragrances</h1>
 					<ul className="fragList">
 						{oud.map((item, index) => {
 							return (
 								<li key={index}>
-									<p>
+									<p className="individualFragrance">
 										<span>like </span>
 										{item}
 									</p>

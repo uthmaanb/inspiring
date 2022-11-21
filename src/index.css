@@ -159,6 +159,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 3rem;
 }
 
 .fragList {
@@ -168,10 +169,26 @@ ul {
 	width: 80%;
 }
 
+.fragranceHeading {
+	padding-bottom: 2rem;
+	font-size: 2rem;
+}
+span {
+	font-weight: lighter;
+	font-size: 0.7rem;
+}
+
+.individualFragrance {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+	font-weight: bold;
+}
+
 /* About section */
 .about {
 	height: 30vh;
 	padding-top: 5rem;
+	padding-left: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -246,6 +263,15 @@ ul {
 	justify-content: space-around;
 }
 
+@media screen and (max-width: 750px) {
+	.fragList {
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		width: 80%;
+	}
+}
+
 @media screen and (max-width: 740px) {
 	.burger {
 		display: flex;
@@ -291,6 +317,7 @@ ul {
 
 	.navbar-brand {
 		font-size: 1.5rem;
+		padding-left: 2rem;
 	}
 
 	.navbar-nav {
@@ -330,6 +357,9 @@ ul {
 @media screen and (min-width: 740px) {
 	.navbar-nav2 {
 		display: none;
+	}
+	.navbar-brand {
+		padding-left: 2rem;
 	}
 }
 
