@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Content from "./Content";
 import Footer from "./Footer";
 import Contact from "./Contact";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
 	const homeRef = useRef(null);	  
