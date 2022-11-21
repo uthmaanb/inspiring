@@ -137,8 +137,8 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 			</section>
 
 			<section id="about" className="about" ref={aboutRef}>
-				<h1>About Us</h1>
-				<p>
+				<h1 className="aboutUs">About Us</h1>
+				<p className="aboutUs-content">
 					We create oil-based perfumes based on widely known and popular brands.
 				</p>
 			</section>

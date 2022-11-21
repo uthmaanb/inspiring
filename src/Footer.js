@@ -3,7 +3,7 @@ const Footer = () => {
           <footer className="footerContainer">
               <div className="footerItem">Inspiring Scents</div>
               <div className="footerItem">Hashir Sadaf</div>
-              <a href="#contact-us" className="footerItem">Contact Us</a>
+              <a href="#contact-us" className="footerItem footerContact">Contact Us</a>
           </footer>
        );
   }
