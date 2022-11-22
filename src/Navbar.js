@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ homeRef, aboutRef, fragRef  }) => {
+const Navbar = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef  }) => {
 	const [isActive, setIsActive] = useState(false);
 
 	const handleClick = (event) => {
@@ -63,15 +63,33 @@ const Navbar = ({ homeRef, aboutRef, fragRef  }) => {
 									</Link>
 								</li>
 								<div className="dropdown-content">
-									<a className="nav-link" href="#fragrances">
+									<Link
+										className="nav-link"
+										onClick={() => {
+											handleScroll(femaleRef.current);
+										}}
+										to="/#female"
+									>
 										Female Fragrances
-									</a>
-									<a className="nav-link" href="#malefragrances">
+									</Link>
+									<Link
+										className="nav-link"
+										onClick={() => {
+											handleScroll(maleRef.current);
+										}}
+										to="/#male"
+									>
 										Male Fragrances
-									</a>
-									<a className="nav-link" href="#oudfragrances">
+									</Link>
+									<Link
+										className="nav-link"
+										onClick={() => {
+											handleScroll(oudRef.current);
+										}}
+										to="/#oud"
+									>
 										Oud Fragrances
-									</a>
+									</Link>
 								</div>
 							</ul>
 							<li className="nav-item">
@@ -109,19 +127,37 @@ const Navbar = ({ homeRef, aboutRef, fragRef  }) => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#malefragrances">
-								Male Fragrances
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#oudfragrances">
-								Oud Fragrances
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link" href="#femalefragrances">
+							<Link
+								className="nav-link"
+								onClick={() => {
+									handleScroll(femaleRef.current);
+								}}
+								to="/#female"
+							>
 								Female Fragrances
-							</a>
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link
+								className="nav-link"
+								onClick={() => {
+									handleScroll(maleRef.current);
+								}}
+								to="/#male"
+							>
+								Male Fragrances
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link
+								className="nav-link"
+								onClick={() => {
+									handleScroll(oudRef.current);
+								}}
+								to="/#oud"
+							>
+								Oud Fragrances
+							</Link>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link" href="#quickservice">

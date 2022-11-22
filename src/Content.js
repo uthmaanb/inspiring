@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
-const Content = ({ homeRef, aboutRef, fragRef }) => {
+const Content = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef }) => {
 
 	const handleScroll = (ref) => {
 		window.scrollTo({
@@ -119,7 +119,7 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 	];
 	return (
 		<div>
-			<Navbar homeRef={ homeRef } aboutRef={ aboutRef } fragRef={ fragRef }  />
+			<Navbar homeRef={ homeRef } aboutRef={ aboutRef } fragRef={ fragRef } femaleRef={femaleRef} maleRef={maleRef} oudRef={oudRef} />
 
 			<section id="landing" className="landing" ref={homeRef}>
 				<h2 className="landing-title">Welcome to Inspiring Scents</h2>
@@ -143,7 +143,7 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 			</section>
 
 			<section id="fragrances" className="fragrances" ref={fragRef}>
-				<div className="female fragLists">
+				<div id="female" className="female fragLists" ref={femaleRef}>
 					<h1 className="fragranceHeading">Female fragrances</h1>
 					<ul className="fragList">
 						{female.map((item, index) => {
@@ -159,7 +159,7 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 					</ul>
 				</div>
 
-				<div className="male fragLists">
+				<div id="male" className="male fragLists" ref={maleRef}>
 					<h1 className="fragranceHeading">Male fragrances</h1>
 					<ul className="fragList">
 						{male.map((item, index) => {
@@ -175,7 +175,7 @@ const Content = ({ homeRef, aboutRef, fragRef }) => {
 					</ul>
 				</div>
 
-				<div className="oud fragLists">
+				<div id="oud" className="oud fragLists" ref={oudRef}>
 					<h1 className="fragranceHeading">Oud fragrances</h1>
 					<ul className="fragList">
 						{oud.map((item, index) => {

@@ -8,12 +8,15 @@ function App() {
 	const homeRef = useRef(null);	  
 	const aboutRef = useRef(null);	  
 	const fragRef = useRef(null);	  
+	const femaleRef = useRef(null);	  
+	const maleRef = useRef(null);	  
+	const oudRef = useRef(null);	  
 
 	return (
 		<Router>
 			<div className="App">
 				<Routes>
-					<Route path="/" element={<Content homeRef={homeRef} aboutRef={aboutRef} fragRef={fragRef} />} />
+					<Route path="/" element={<Content homeRef={homeRef} aboutRef={aboutRef} fragRef={fragRef} femaleRef={femaleRef} maleRef={maleRef} oudRef={oudRef} />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="*" element={ <div><h2>404 Page not found</h2></div> } />
 				</Routes>
