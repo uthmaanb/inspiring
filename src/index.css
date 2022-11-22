@@ -213,6 +213,10 @@ span {
 }
 
 /* Form Styles */
+.formSection {
+	height: calc(100vh - 66px);
+}
+
 .formContainer {
 	margin-left: 3.5rem;
 	margin-top: 7rem;
