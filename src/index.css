@@ -171,15 +171,11 @@ ul {
 
 
 /* Fragrance lists */
-#fragrances {
-	padding-top: 5rem;
-}
-
 .fragLists {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 3rem;
+	padding-top: 5rem;
 }
 
 .fragList {
