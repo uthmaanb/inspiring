@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import Content from "./Content";
-import Footer from "./Footer";
-import Contact from "./Contact";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
