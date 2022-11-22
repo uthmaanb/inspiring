@@ -214,6 +214,23 @@ span {
 }
 
 /* Form Styles */
+.backContainer{
+	
+	margin-top: 2rem;
+	margin-left: 3.2rem;
+	padding: 1rem 2rem;
+	background-color: #33215e;
+	font-size: 1rem;
+	font-weight: 700;
+	max-width: 14%;
+	text-align: center;
+	
+}
+
+.back {
+	color: white;
+}
+
 .formSection {
 	height: calc(100vh - 66px);
 }
@@ -248,6 +265,19 @@ span {
 	bottom: 7px;
   }
 
+.mb-1 {
+	font-size:medium;
+	margin-left: 1rem;
+	position: relative;
+	bottom: 7px;
+	color: #33215e;
+	font-weight: 600;
+}
+
+.fa-regular, .far {
+	color: #33215e;
+}
+
 #name {
 	width: 9rem;
 	height: 3rem;
@@ -277,6 +307,11 @@ span {
 
 .submitButton {
 	padding: 1rem 2rem;
+	font-weight: 900;
+	border: none;
+	color: white;
+	background-color: #33215e;
+	cursor: pointer;
 }
 
 /* footer styles */
