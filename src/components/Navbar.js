@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef  }) => {
+const Navbar = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef, reviewRef  }) => {
 	const [isActive, setIsActive] = useState(false);
 
 	const handleClick = (event) => {
@@ -92,6 +92,17 @@ const Navbar = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef  }) => 
 									</Link>
 								</div>
 							</ul>
+							<li className="nav-item">
+								<Link
+									className="nav-link"
+									onClick={() => {
+										handleScroll(reviewRef.current);
+									}}
+									to="/#review"
+								>
+									Reviews
+								</Link>
+							</li>
 							<li className="nav-item">
 								<Link className="nav-link" to="/contact">
 									Contact Us
