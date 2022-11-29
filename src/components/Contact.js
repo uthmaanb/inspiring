@@ -12,7 +12,9 @@ const Contact = () => {
 
 	return (
 		<div className="formSection">
-			<Link to="/">back</Link>
+			<div className="backContainer">
+			<Link className="back" to="/">Back to homepage</Link>
+			</div>
 
 			<div className="formContainer">
 				<form action="https://formspree.io/f/mgedjrpd" method="POST">
@@ -66,7 +68,7 @@ const Contact = () => {
 							className="item-link"
 						>
 							<i className="far fa-2x fa-comment mr-4"></i>
-							<span className="mb-0">Chat on Whatsapp</span>
+							<span className="mb-1">Chat on Whatsapp</span>
 						</a>
 					</div>
 
@@ -77,7 +79,7 @@ const Contact = () => {
 							className="item-link"
 						>
 							<i className="far fa-2x fa-envelope mr-4"></i>
-							<span className="mb-0">inspiringscentssouthafrica@gmail.com</span>
+							<span className="mb-1">inspiringscentssouthafrica@gmail.com</span>
 						</a>{" "}
 					</div>
 				</div>
