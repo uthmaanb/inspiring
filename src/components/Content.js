@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import Reviews from "./Reviews";
 
-const Content = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef }) => {
+const Content = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef, reviewRef }) => {
 
 	const handleScroll = (ref) => {
 		window.scrollTo({
@@ -119,7 +120,7 @@ const Content = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef }) => 
 	];
 	return (
 		<div>
-			<Navbar homeRef={ homeRef } aboutRef={ aboutRef } fragRef={ fragRef } femaleRef={femaleRef} maleRef={maleRef} oudRef={oudRef} />
+			<Navbar homeRef={ homeRef } aboutRef={ aboutRef } fragRef={ fragRef } femaleRef={femaleRef} maleRef={maleRef} oudRef={oudRef} reviewRef={reviewRef} />
 
 			<section id="landing" className="landing" ref={homeRef}>
 				<h2 className="landing-title">Welcome to Inspiring Scents</h2>
@@ -191,6 +192,8 @@ const Content = ({ homeRef, aboutRef, fragRef, femaleRef, maleRef, oudRef }) => 
 					</ul>
 				</div>
 			</section>
+
+			<Reviews reviewRef={reviewRef} />
 		</div>
 	);
 };
